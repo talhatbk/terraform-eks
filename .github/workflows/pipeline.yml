@@ -1,9 +1,7 @@
 name: Terraform Plan and Apply (for Merging to Main)
 
 on:
-  pull_request:
-    branches:
-      - main  # Triggered when a PR is merged into main
+  workflow_dispatch:  # Only manual trigger
 
 env:
   TF_WORKING_DIR: .
